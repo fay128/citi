@@ -1,5 +1,5 @@
 Naming convention
-a. trained model path: path_prefix/{task_name}_{client_name}_{doc_type_name}_{model_type_name}_{training_process_id}
+a. trained model path: path_prefix/{task_name}_{client_name}_{doc_type_name}_{model_type_name}_{training_process_id}.pkl ##TBC with Ricy if it is single file
 b. model name in model DB: {task_name}_{client_name}_{doc_type_name}_{model_type_name}
 
 MODEL_TRAINING_API
@@ -24,7 +24,7 @@ MODEL_TRAINING_API
    		client_name (Optional. Will get from DB based on doc_type_name if not provided)
    		doc_type_name
    		model_type_name
-   		trained_model_metrics ##TBC with Ricy
+   		trained_model_metrics ##TBC with Ricy regarding the content of metrics
    		trained_model_path
 
    Response:
@@ -52,5 +52,6 @@ MODEL_SELECTION_API
    		model_name 
    Response:
    200
+   Update is_used_for_prediction and trigger loadmodel api of lib mario ##TBC with Ricy as for the parameter "model_class"
 
    
