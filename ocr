@@ -1,0 +1,9 @@
+1. Major Funcion
+Copy Jira
+
+2. Flow
+a. Query Engine triggers OCR Service with attachment file. (Same as the exitsting flow).
+b. If attachment file is PDF, use pdf box to transform the PDF file into image file (new logic). 
+c. Trigger tessract to conduct OCR process based on the first page of transformed image file. (Same as the exitsting flow).
+
+3. Performance(image extraction time) , extracted image and OCR result with examples 
