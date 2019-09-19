@@ -1,0 +1,6 @@
+Hi Anna, Mattan
+
+The fix of bug(b) has been merged and will deployed into UAT today. Will be tagged in snapshot and deployed again in UAT release on next Monday
+For the APAC rollout user story (), the implementation is completed. Can we merge them into extractor's master branch later next week? 
+The reason is to avoid the risk that this change will bring in in case we need more fix/commit for bug(b) when the OPS verify the fix in UAT.
+According to David's plan, the SFE will start testing for the rollout of the 3 countries in Sep 30th so I think we still got time.
