@@ -14,3 +14,15 @@ INSERT INTO client_task_doc_type(client_name, task_name, doc_type_name ) VALUES(
 INSERT INTO client_task_doc_type(client_name, task_name, doc_type_name ) VALUES('QMA', 'NER', 'EMAIL');
 INSERT INTO client_task_doc_type(client_name, task_name, doc_type_name ) VALUES('QMA', 'CLASSIFICATION', 'SWIFT599');
 INSERT INTO client_task_doc_type(client_name, task_name, doc_type_name ) VALUES('QMA', 'NER', 'SWIFT599');
+
+
+-- insert model_type data  
+INSERT INTO model_type(model_type_name, task_name ) VALUES('BERTCLASSIFICATION', 'CLASSIFICATION');
+INSERT INTO model_type(model_type_name, task_name ) VALUES('BILSTMNER', 'NER');
+
+        
+-- insert model data 
+INSERT INTO model(model_name, model_type_name, doc_type_name ) VALUES('CLASSIFICATION_QMA_EMAIL_BERTCLASSIFICATION', 'BERTCLASSIFICATION', 'EMAIL');
+INSERT INTO model(model_name, model_type_name, doc_type_name ) VALUES('CLASSIFICATION_QMA_SWIFT599_BERTCLASSIFICATION', 'BERTCLASSIFICATION', 'SWIFT599');
+INSERT INTO model(model_name, model_type_name, doc_type_name ) VALUES('NER_QMA_EMAIL_BILSTMNER', 'BILSTMNER', 'EMAIL');
+INSERT INTO model(model_name, model_type_name, doc_type_name ) VALUES('NER_QMA_SWIFT599_BILSTMNER', 'BILSTMNER', 'SWIFT599');
