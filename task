@@ -1,0 +1,19 @@
+amo get data from sfe dump to retrain 599 classifier to identify amo
+extract field to use rule or - pending their review
+api change 
+
+565 implementation on track. uat period delay and scope change for us domestic and ask for sample retrain
+
+599 feedback api added to store feedback as kogs- to add logic to calculate metrics and add job to add feedbeck for retrain
+
+instant clarity new query support - pending testing - 
+adding a upload load api for user to selfservice 
+regredssion quality test
+badcase fix
+
+ask
+account opening
+1 api change sfe side aware this issue？
+2 any plan for uat prod？
+
+oneshot any release？
